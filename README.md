@@ -32,21 +32,23 @@ This, should in turn, improve productivity in teams. Only one engineer will be n
 
 #### Supporting hypotheses
 
-- If Attentive is cute and can alter its appearance to look more attentive when you talk to it, it'll feel more inviting to talk to it.
-
-- If Attentive happens to also be a tool the developer uses to manage their day, a rapport will have already be built by the time bugs are in need of squashing. This rapport will conveniently define Attentive as a helpful *thing*.
+- If Attentive is cute and can alter its appearance to look more attentive when you talk to it, devs will use it more.
 
 - If Attentive is easy and intuitive to communicate with, like a well trained dog, it won't feel awkward talking to it for help.
+
+- If Attentive happens to also be a tool the developer uses to manage their day, a rapport will form by the time bugs are in need of squashing. This rapport will conveniently define Attentive as a helpful *thing* in the mind of the dev.
 
 - If Attentive can follow along within your development environment, and prompt you for explanations, it'll only feel natural to enlighten the toy with your stupidity.
 
 ### User Population
 
-We will focus on software developers, and work with a few
+We will focus on software developers who don't already use a rubber ducky as a debugging tool, and work with a few employees at Genetec Inc. to get feedback.
 
 ### Prototype
 
-In the aim to improve overall mental health and facilitate talking to an inanimate object, the Attentive platform
+In the aim to improve overall mental health and facilitate talking to an inanimate object, the Attentive platform will be embodied by a plush toy dog. It will be outfitted with a raspberry pi, servo motors, and a camera.
+
+For human facial detection and orientation estimation
 
 ## Next Steps
 
