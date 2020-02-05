@@ -1,19 +1,27 @@
 # Attentive
+
 The cute smart assistant that lives on your desk. Like a rubber ducky, but way better.
 
 ## Project Pitch
 
 N.B. This pitch targets software developers, but the product will be generalized to address the needs of common folk soon.
 
-### Problem:
+### Problem
+
 Software developers tend to overwork themselves and hate planning, estimating, remembering, and making non-code-related choices while they're trying write code.
-Current solutions for project management in software development are geared toward team productivity and lack personal management features that devs so dearly need. 
+Current solutions for project management in software development are geared toward team productivity and lack intimate personal management features that devs so dearly need.
 Unfortunately there is a lapse in time management and organization solutions for the individual engineer; and personal tools that do exist, generally, don't integrate nicely with the engineer's work domain.
 
 The workplace can become a stressful environment when you're required to be an expert in your field and be your own secretary too.
 
-### Hypothesis:
-The concept of rubber ducky debugging has long been regarded as the golden standard for eliminating undetectable stupidity from code. 
+### Hypothesis
+
+The concept of rubber ducky debugging has long been regarded as the golden standard for eliminating undetectable stupidity from code.
+First mentioned in *The Pragmatic Programmer*, in 1964, the rubber ducky has since proven itself in the workplace as an intimate programming companion.
+
+Unfortunately, the rubber ducky hasn't been iterated upon for 56 years.
+
+
 
 
 
