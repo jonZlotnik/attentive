@@ -1,12 +1,23 @@
 # Attentive
 
-The cute smart assistant that lives on your desk. Like a rubber ducky, but way better.
+The cute smart assistant framework that lives on your desk. Like a rubber ducky, but way better.
 
 ## Project Pitch
 
 N.B. This pitch targets software developers, but the product will be generalized to address the needs of common folk soon.
 
-### Problem
+### Problem Statement
+
+The rubber ducky hasn't been iterated upon for 56 years.
+Rubber ducky debugging has long been regarded as the golden standard for eliminating undetectable stupidity from code.
+First proposed in *The Pragmatic Programmer* in 1964, the rubber ducky has since proven itself in the workplace as an intimate programming companion.
+
+Many software developers, however, find it difficult, or even ridiculous, to use their imagination to begin a conversation with a rubber toy when trying to squash debilitating bugs in their code.
+Rubber duckies don't appear to be listening to you, they provide no auditory or visual feedback, and they are only as effective as the user's imagination can carry them.
+
+When developers can't, or refuse to, use a rubber ducky for debugging undetectable bugs, they turn to their colleagues to fulfill the role of the inanimate rubber toy.
+
+#### Supporting problem
 
 Software developers tend to overwork themselves and hate planning, estimating, remembering, and making non-code-related choices while they're trying write code.
 Current solutions for project management in software development are geared toward team productivity and lack intimate personal management features that devs so dearly need.
@@ -16,10 +27,30 @@ The workplace can become a stressful environment when you're required to be an e
 
 ### Hypothesis
 
-The concept of rubber ducky debugging has long been regarded as the golden standard for eliminating undetectable stupidity from code.
-First mentioned in *The Pragmatic Programmer*, in 1964, the rubber ducky has since proven itself in the workplace as an intimate programming companion.
+If we can make the rubber ducky more helpful and require less imagination to use, the proven rubber ducky debugging technique will become more accessible to the majority of developers.
+This, should in turn, improve productivity in teams. Only one engineer will be needed to detect obfuscated stupidity in their code.
 
-Unfortunately, the rubber ducky hasn't been iterated upon for 56 years.
+#### Supporting hypotheses
+
+- If Attentive is cute and can alter its appearance to look more attentive when you talk to it, it'll feel more inviting to talk to it.
+
+- If Attentive happens to also be a tool the developer uses to manage their day, a rapport will have already be built by the time bugs are in need of squashing. This rapport will conveniently define Attentive as a helpful *thing*.
+
+- If Attentive is easy and intuitive to communicate with, like a well trained dog, it won't feel awkward talking to it for help.
+
+- If Attentive can follow along within your development environment, and prompt you for explanations, it'll only feel natural to enlighten the toy with your stupidity.
+
+### User Population
+
+We will focus on software developers, and work with a few
+
+### Prototype
+
+In the aim to improve overall mental health and facilitate talking to an inanimate object, the Attentive platform
+
+## Next Steps
+
+
 
 
 
@@ -35,31 +66,31 @@ For me, it's to escape all my other responsibilities that I need to track.
 Planning, estimating, remembering, and making choices are all things I'm horrible at. 
 Thankfully humans have invented to-do lists and calendars. -->
 
-<!-- Often during work, people are met with moments of uncertainty during which they distract themselves with something like a coffee or snack. Once back at their desks they're met with the same problem from which they originally got disctracted. -->
+<!-- Often during work, people are met with moments of uncertainty during which they distract themselves with something like a coffee or snack. Once back at their desks they're met with the same problem from which they originally got distracted. -->
 
 <!-- Surgeons often have to look away for guidance to a navigation system outside
 the sterile area in the operating room. This can be detrimental to the task at hand and lead
 to errors or extra time in surgery. -->
 
-### Hypothesis:
+<!-- ### Hypothesis: -->
 <!-- Auditory displays use sound to give users information. We believe that we can
 use sound cues to help guide a surgeon to a given target much more accurately and
 quickly. -->
 
-### User population: 
+<!-- ### User population:  -->
 <!-- We will focus on neurosurgeons, and work with a few surgeons at the
 Montreal Neuro to get feedback. -->
 
-### Prototype:
+<!-- ### Prototype: -->
 <!-- As we will build on an existing open-source framework (IBIS), we believe, that
 we should have no problem to develop a plug-in that allows for data sonification of distance
 information to a target. We will interface the IBIS system with an external audio synthesizer,
 and developed an IBIS audio plugin capable of transmitting open sound control (OSC)
 messages from IBIS to the pure data audio programming environment. -->
 
-<!-- ## Next Steps
 
-### Rubber Ducky Plugin --- for stupidity in code
+
+<!--### Rubber Ducky Plugin --- for stupidity in code
 "I'm running my code, but it keeps crashing when it tries to instantiate this here object. I'll go find my friend and explain to him every line of code until I realize the stupid mistake I made. I'll then proceed to thank him and tell him to get out of my cubicle so I can get back to work."
 
 ### Productivity Plugin --- for ADHD at work 
