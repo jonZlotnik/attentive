@@ -38,6 +38,8 @@ This, should in turn, improve productivity in teams. Only one engineer will be n
 
 - If Attentive happens to also be a tool the developer uses to manage their day, a rapport will form by the time bugs are in need of squashing. This rapport will conveniently define Attentive as a helpful *thing* in the mind of the dev.
 
+- If developers can have a small private stand-up meeting with Attentive every day, they'll be able to be honest with themselves about tasks and deadlines without the stress of their entire team being there.
+
 - If Attentive can follow along within your development environment, and prompt you for explanations, it'll only feel natural to enlighten the toy with your stupidity.
 
 ### User Population
@@ -46,9 +48,23 @@ We will focus on software developers who don't already use a rubber ducky as a d
 
 ### Prototype
 
+#### Loveability
+
 In the aim to improve overall mental health and facilitate talking to an inanimate object, the Attentive platform will be embodied by a plush toy dog. It will be outfitted with a raspberry pi, servo motors, and a camera.
 
-For human facial detection and orientation estimation
+For human facial detection and orientation estimation, the Google Cloud Vision API will be used.
+
+#### Communication
+
+There will be a Microsoft Teams integration for talking to your little buddy when you're away from your desk and for reliable notification features.
+
+#### Implementation & Integrations
+
+Business logic will be implemented in Google Functions with the help of the Cloud IoT Core and Pub/Sub so as to provide a scalable and modular backend.
+
+Software development environment integration will be with Visual Studio Code.
+
+Productivity software integrations will aim to include Microsoft Teams, Outlook, and Jira (if time permits).
 
 ## Next Steps
 
