@@ -1,14 +1,160 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{biblatex}
+\usepackage{fullpage}
 
-\title{Attentive: The cute smart assistant framework that lives on your desk}
-\author{Jon Zlotnik}
-\date{March 2020}
+\addbibresource{refs.bib}
+
+\title{Improving the software development process with a smart assistant framework: Attentive}
+\author{Jon Zlotnik \\ \textit{40030143}}
+\date{6 March 2020}
+
 
 \begin{document}
 
 \maketitle
 
+\begin{multicols}{2}
+
 \section{Introduction}
+The rubber ducky hasn't been majorly iterated upon for over 20 years. 
+Rubber ducking, or rubber ducky debugging, has long been regarded as the golden standard for eliminating undetectable stupidity from code. 
+First proposed in \textit{The Pragmatic Programmer}, by David Thomas and Andrew Hunt, the rubber ducking technique has since proven itself in the workplace as an natural debugging option. \cite{book:Hunt1999} 
+Unfortunately, for most, their metaphorical rubber duck is still their colleague working at the next desk over.
+
+\begin{quote}
+    \textit{\textbf{Rubber Ducking.}
+A very simple but particularly useful technique for finding the cause of a problem is simply to explain it to someone else. 
+The other person should look over your shoulder at the screen, and nod his or her head constantly 
+(like a rubber duck bobbing up and down in a bathtub). 
+They do not need to say a word; the simple act of explaining, step by step, what the code is supposed to do often causes the problem to leap off the screen and announce itself.
+Why "rubber ducking"? While an undergraduate at Imperial College in London, Dave did a lot of work with a research assistant named Greg Pugh, one of the best developers Dave has known. 
+For several months Greg carried around a small yellow rubber duck, which he'd place on his terminal while
+coding. It was a while before Dave had the courage to ask....
+It sounds simple, but in explaining the problem to another person you must explicitly state things that you may take for granted when going through the code yourself. By having to verbalize some of these assumptions, you may suddenly gain new insight into the problem.}
+\cite{book:Hunt1999}
+\end{quote}
+
+Many software developers, find it difficult, or even ridiculous, to use their imagination to begin a conversation with a rubber toy when trying to squash debilitating bugs in their code.
+Rubber duckies don't appear to be listening to you, they provide no auditory or visual feedback, and they are only as effective as the user's imagination can carry them. 
+So, they turn to their colleagues to fulfill the role of the inanimate rubber toy.
+
+\subsection{The bigger problem}
+Software developers tend to overwork themselves and hate planning, estimating, remembering, and making non-code-related choices while they're trying write code. 
+Current solutions for project management in software development are geared toward team productivity and lack intimate personal management features that developers so dearly need. 
+There is a lapse in time management and organization solutions for the individual engineer; and personal tools that do exist, generally, don't integrate nicely with the engineer's work domain.
+
+The workplace can become a stressful environment when you're required to be an expert in your field and be your own secretary too.
+If we can make the rubber ducky more helpful and require less imagination to use, the true rubber ducking technique might become more accessible to the majority of developers.
+This, should in turn, improve productivity in teams. 
+Engineers won't need to call on there colleagues as often to detect obfuscated stupidity in their own code.
+
+\subsection{Hypotheses}
+If Attentive:
+\begin{itemize}
+    \item is cute and can alter its appearance to look more attentive when you talk to it, developers will be drawn to talk to it.
+    \item is easy and intuitive to communicate with, like a well trained dog, it won't feel awkward talking to it for help.
+    \item can follow along within your development environment, and prompt you for explanations, it'll only feel natural to enlighten the toy with your stupidity.
+    \item happens to also be a tool the developer uses to manage their day, a rapport will form by the time bugs are in need of squashing. This rapport will conveniently define Attentive as a helpful thing in the mind of the developers.
+    \item can lead a small, private stand-up meeting with its owner at the beginning of every day, developers will have a time to be honest with themselves about tasks and deadlines without the stress of their entire team being there.
+\end{itemize}
+
+\subsection{Related work}
+
+Currently, there are plenty of virtual assistants available on the market. The top competitors are Amazon's Alexa and Google's Smart Assistant. Some of the more successful open source projects include Leon, Mycroft Core, Jarvis, and Kalliope. They all have \textit{marketplaces} for finding and downloading additional features. \cite{awesomeopensource2020}
+
+Despite the growing market for voice-controlled smart assistants, I haven't discovered any projects with the goal of helping engineers perform domain-specific tasks in the workplace.
+
+
+
+\section{System Design}
+
+With the aim to facilitate talking to an inanimate object and improve overall mental health at the workplace, the Attentive platform will be embodied by a plush toy dog.
+The dog's ears will provide a mechanism by which to convey emotion and attention.
+It will be outfitted with a raspberry pi, servo motors, and a camera.
+
+\paragraph{Core}
+Attentive will either be built on top of the Leon or Mycroft Core project. \cite{leondocs2020}\cite{mycroftai2020}
+Further research will be done to determine the more feasible option.
+The Google Cloud Vision API will be used for human facial detection and cranial orientation estimation. 
+Cloud hosted business logic will be implemented as Google Functions with the help of the Cloud IoT Core and Pub/Sub services so as to provide a scalable and modular backend.
+
+\subparagraph{VS Code}
+The Attentive framework will be able to perform actions for you in Visual Studio Code through a VSCode extension. Actions may include re-indenting or reformatting files, setting breakpoints for debugging, and other actions that you might find in the IDE's \textit{command palette}. \cite{vscodeextensioncapabilities2020}
+\subparagraph{Slack} 
+There will be a Slack integration for talking to your little buddy while you're away from your desk and for reliable notification features. \cite{slackentrypoints2020}
+
+\paragraph{Productivity}
+For this iteration, integration with productivity software such as Google's GSuite or Microsoft's O365 will not be considered.
+
+If time permits, however, integration with the Google Voice Assistant will be investigated in order to provide basic productivity features already implemented by their system. \cite{googleassskd2020}
+
+
+\section{Method}
+
+\subsection{Study design}
+In order determine the effectiveness of the Attentive framework in ameliorating software engineers' time spent at the workplace, we will conduct 16h long prototype trials with employees at Genetec Inc.
+Genetec is a software development company recently named the world’s number one vendor of Video Management Systems.
+The target population size for the study is 10 engineers.
+A convenience sample will be used, and so no particular effort will be made to eliminate any kind of bias.
+They'll be given the device, and asked to follow the setup instructions to connect it to a Slack workspace and install the VSCode extension.
+
+A short interview will be conducted after each trial to determine how the Attentive Framework fit into the daily routine of the trial subject.
+In addition to the interview, quantitative data will be extracted from the logs produced by the device.
+This will include the frequency of \textit{gazes} (i.e. the engineer's face directed at the device) and the frequency of commands received overtime.
+\cite{martakersten2020}
+
+\subsection{Biggest risk}
+The biggest risk to the success of the study is the mysterious nature of the device.
+People may not be willing to interact with it.
+There aren't any well known examples of similar studies or devices already out there in the wild.
+It will, therefore, be difficult to plan for unforeseen reactions from trial participants so quick trial adaptation and modification will most likely be required.
+
+
+
+% \section{Introduction}
+% The rubber ducky hasn't been iterated upon for 56 years.
+% First proposed in The Pragmatic Programmer in 1964, the rubber ducky has since proven itself in the workplace as an intimate programming companion. \cite{hunt1900pragmatic}
+% Rubber ducky debugging has long been regarded as the theoretical golden standard for eliminating undetectable stupidity from code.
+% Unfotunately
+
+
+% Many software developers, however, find it difficult, or even ridiculous, to use their imagination to begin a conversation with a rubber toy when trying to squash debilitating bugs in their code. 
+% Rubber duckies don't appear to be listening to you, they provide no auditory or visual feedback, and they are only as effective as the user's imagination can carry them.
+
+% When developers can't, or refuse to, use a rubber ducky for debugging undetectable bugs, they turn to their colleagues to fulfill the role of the inanimate rubber toy.
+
+% \subsection{Hypothesis}
+% % \lipsum[2-2]
+
+% \subsection{Theoretical contribution}
+% % \lipsum[3-3]
+
+
+% \section{Related work}
+
+% % \lipsum[4-4]
+
+% \section{System design}
+
+% % \lipsum[1-1]
+
+% \section{Method}
+
+% % \lipsum[1-1]
+
+% \subsection{Study design}
+
+% % \lipsum[1-1]
+
+% \subsection{Biggest risk}
+
+% % \lipsum[1-1]
+
+\end{multicols}
+
+\printbibliography
 
 \end{document}
