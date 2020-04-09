@@ -1,6 +1,7 @@
 # Attentive
 
 The cute smart assistant framework that lives on your desk. Like a rubber ducky, but way better.
+
 All references and useful links are in [references.md](references.md)
 
 ## Update 2020/04/09 - Adjusting architecture
