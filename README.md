@@ -2,6 +2,10 @@
 
 The cute smart assistant framework that lives on your desk. Like a rubber ducky, but way better.
 
+## Update 2020/04/09 - Adjusting architecture
+- Replacing VSCode extension with keyboard shortcut emulation.
+- Due to COVID-19, the physical manifestation of the attentive assistant will be temporarily replaced with an app showing bobbing rubber duck who will turn to face you when you look at it with your whole face.
+
 ## Project Pitch
 
 N.B. This pitch targets software developers, but the product will be generalized to address the needs of common folk soon.
