@@ -1,0 +1,3 @@
+# The plan...
+
+Let's start with a quick python client and then we'll try to implement the other ones.
