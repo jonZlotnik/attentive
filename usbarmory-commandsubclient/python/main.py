@@ -1,6 +1,5 @@
 import os
 import json
-import jwt
 from google.cloud import pubsub_v1
 from google.auth import jwt
 

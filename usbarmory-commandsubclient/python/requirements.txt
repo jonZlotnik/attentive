@@ -1,3 +1,2 @@
 google-auth-oauthlib
 google-cloud-pubsub
-jwt
